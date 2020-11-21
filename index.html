@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,70 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
     <style>
-        @media (max-width: 866px) {
-   .header{
-       width: 866px;
-       background-color: red;
-   }
+        @media (max-width: 424px) {
+    .principal {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+  
+
+    .under {
+        margin: 20px 0px;
+    }
+
+    .posts {
+        grid: none;
+        width: 100%;
+    }
+}
+
+.lastpost {
+    display: none;
+}
+
+.feed_post {
+    flex-direction: column
+}
+
+.feed_post img {
+    width: 100%;
+}
+
+.feed_content {
+    padding-left: 0px;
+}
+
+.see {
+    font-size: 16px;
+    font-weight: 700;
 }
     </style>
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <div class="circle"></div>
-            <div class="bordeazul"></div>
-            <h2 class="a">A</h2>
-        </div>
-        <div>
-            <ul>
-                <li>Home</li>
-                <li>Espectáculo</li>
-                <li>Deporte</li>
-            </ul>
-        </div>    
-    </header>
+<div class="project">
+    <body>
+        <header>
+            <div class="logo">
+                <div class="circle"></div>
+                <div class="bordeazul"></div>
+                <h2 class="a">A</h2>
+            </div>
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>Espectáculo</li>
+                    <li>Deporte</li>
+                </ul>
+            </div>    
+        </header>
     <main>
         <div class="banner">
-            <figure class="c1"><img src="./images/Ellipse.png" alt="" height="42px" width="42px" ></figure>
-            <figure class="c2"><img src="./images/Ellipse.png" alt="" height="42px" width="42px" ></figure>
-            <figure class="c3"><img src="./images/Ellipse.png" alt="" height="42px" width="42px" ></figure>
-            <figure class="c4"><img src="./images/Ellipse.png" alt="" height="42px" width="42px" ></figure>
-            <figure class="c5"><img src="./images/Ellipse.png" alt="" height="42px" width="42px" ></figure>
-            <figure class="e1"><img src="./images/Ellipse (1).png" alt="" height="18px" width="18px" ></figure>
-            <figure class="e2"><img src="./images/Ellipse (1).png" alt="" height="18px" width="18px"></figure>
-            <figure class="e3"><img src="./images/Ellipse (1).png" alt="" height="18px" width="18px"></figure>
-            <figure class="e4"><img src="./images/Ellipse (1).png" alt="" height="18px" width="18px"></figure>
-            <figure class="e5"><img src="./images/Ellipse (1).png" alt="" height="18px" width="18px"></figure>
-            <figure class="vector"><img src="./images/Vector (6).png" alt="" width="100%" height="250px"></figure>
             <div class="title">
-            <h1>Blog Afrianska</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h1>Blog Afrianska</h1>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <figure><img src="./images/banner.png" alt="" width="100%" height="250px"></figure>
             
@@ -109,7 +135,7 @@
                         </div> 
                     </div>           
                 </div>
-                <div>
+                <div  class="lastpost">
                     <figure><img src="./images/img-post-3 (1).png" alt="" width="100%" height="100%"></figure>
                     <div >
                         <h3 class="title_post">Porta proin tellus sed pulvinar odio eu pulvinar.</h3>
@@ -192,7 +218,7 @@
                         </div>
                     </div>   
                 </div>
-                <div class="feed_post">
+                <div class="feed_post lastpost">
                     <figure><img src="./images/img-post-7.png" alt=""></figure>
                     <div class="feed_content">
                         <div class="feed_text">
@@ -211,7 +237,7 @@
                         </div>
                     </div>   
                 </div>
-                <div class="feed_post">
+                <div class="feed_post lastpost">
                     <figure><img src="./images/img-post-8.png" alt=""></figure>
                     <div class="feed_content">
                         <div class="feed_text">
@@ -236,7 +262,7 @@
                 </div>
             </div>
             </div>
-        </div>
+    
     </main>
     <footer>
         <div class="footer_1">
@@ -286,12 +312,14 @@
             </div>
             
         </div>
-    </div>
+    
     <div class="copy">
         <p>2019 © Afrianska. All rights reserved.</p>
-
     </div>
-    </footer>
-    
+</footer>
+
+
 </body>
+</div>
 </html>
+

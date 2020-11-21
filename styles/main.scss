@@ -3,7 +3,7 @@
 @import"globals";
 
 /* media queries*/
-@import"866";
+@import"424";
 
 /*header*/
 
@@ -23,7 +23,7 @@
 }
 .bordeazul {
     position: absolute;
-    left:66px;
+    left:50px;
     width: 28px;
     height: 28px;
     border-radius: 100%;
@@ -36,12 +36,11 @@
 .a {
     position: absolute;
     color: #316099;
-    left: 78px;
+    left: 62px;
     top: 59px;
 }
 
 header {
-    width: auto;
     display: flex;
     justify-content: space-between;
     margin: 50px 3% 3% 3%;
@@ -63,76 +62,20 @@ ul :nth-child(1) {
 
 /*Main*/
 .banner {
+    position: relative;
     width: 100%;
     height: 20%;
 }
 
-.vector, 
-.e1,
-.e2,
-.e3,
-.e4,
-.e5,
-.c1,
-.c2,
-.c3,
-.c4,
-.c5  {
-    position: absolute;   
-}
-
-
-.e1 {
-    margin-top:10px; 
-    margin-left: 20px;
-}
-
-.e2 {
-    margin-top:30px; 
-    margin-left: 800px;
-}
-
-.e3 {
-    margin-top:100px; 
-    margin-left: 400px;
-}
-
-.e4 {
-    margin-top:200px; 
-    margin-left: 1100px;
-}
-
-.e5 {
-    margin-top:243px; 
-    margin-left: 600px;
-}
-
-.c1 {
-    margin: -20px 323px 0px;
-}
-
-.c2 {
-    margin: 44px 1020px 0px;
-}
-
-
-.c3 {
-    margin: 140px -6px 0px;
-}
-
-.c4 {
-    margin: 230px 250px 0px;
-}
-
-.c5 {
-    margin: 200px 850px 0px;
-}
 
 .title {
     position: absolute;
     text-align: center;
-    height: 20rem;   
-    margin: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+       
 }
 
 .title h1 {
@@ -214,7 +157,7 @@ input {
 } 
 
 .icons {
-    width: 30%;
+    
     height: 65px;
     display: flex;
     justify-content: right;
